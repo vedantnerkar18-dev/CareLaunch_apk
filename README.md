@@ -8,19 +8,19 @@ A Flutter and Firebase app that helps parents and caregivers of children aged 5 
 
 | | |
 |---|---|
-| Live demo (web) | _add your link here_ |
-| Android APK |https://github.com/vedantnerkar18-dev/CareLaunch_apk/releases/download/v1.0.0/app-release.apk|
+| Live demo (web) | https://carelaunch-a6250.web.app |
+| Android APK | https://github.com/vedantnerkar18-dev/CareLaunch_apk/releases/download/v1.0.0/app-release.apk |
 | Demo video | _add your video link here_ |
 
 **Demo account:** `demo@example.com` / `your-demo-password` (a sample child is already added)
 
+> Tip for the web demo: browsers only play sound after a tap, so tap a music track once in the Child Zone.
+
 ## Screenshots
 
-_Add 3 to 5 screenshots here. Put the images in a `screenshots/` folder and link them, for example:_
-
-```
-![Check-in](screenshots/checkin.png)
-```
+| Check-in | Result | Child Zone |
+|---|---|---|
+| ![Check-in](screenshots/checkin.png) | ![Result](screenshots/result.png) | ![Child Zone](screenshots/child-zone.png) |
 
 ## What it does
 
@@ -63,7 +63,7 @@ _Add 3 to 5 screenshots here. Put the images in a `screenshots/` folder and link
 ## Tech
 
 - **Flutter** (Material 3, a custom teal and white theme) and **Dart**
-- **Firebase Authentication** (email and password) and **Cloud Firestore**
+- **Firebase Authentication** (email and password), **Cloud Firestore** and **Firebase Hosting**
 - **Provider** for state, `url_launcher` for links and calls, `audioplayers` for music
 - Unit tests for the scoring engine, rules, recommendations, models and game logic
 
@@ -104,7 +104,31 @@ service cloud.firestore {
 }
 ```
 
-Build an Android APK with `flutter build apk --release`.
+## Build and deploy
+
+**Android APK**
+
+```bash
+flutter build apk --release
+```
+
+**Web (Firebase Hosting)**
+
+```bash
+flutter build web --release
+firebase init hosting     # first time only
+firebase deploy --only hosting
+```
+
+During `firebase init hosting`:
+
+- Use your existing Firebase project.
+- Set the public directory to `build/web`.
+- Configure as a single-page app: **Yes**.
+- Automatic GitHub builds: **No**.
+- If asked to overwrite `build/web/index.html`: **No**.
+
+Your `firebase.json` should contain `"public": "build/web"` and a rewrite of all URLs to `/index.html`. Add `.firebase/` to `.gitignore` so Firebase's cache is not committed.
 
 ## Roadmap
 
@@ -112,6 +136,7 @@ Build an Android APK with `flutter build apk --release`.
 - Email verification
 - Hindi and Marathi
 - More games and a sleep timer for the music
+- Try the WebAssembly (`--wasm`) web build
 - A reviewed privacy policy and Play Store release
 
 ## Author

@@ -1,1 +1,16 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"carelaunch-a6250","appId":"1:705901396369:android:ccd914bcfcf93b98529a30","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"carelaunch-a6250","configurations":{"android":"1:705901396369:android:ccd914bcfcf93b98529a30","web":"1:705901396369:web:00985be5764c914d529a30","windows":"1:705901396369:web:55f09de7d92f8aeb529a30"}}}}}}
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
