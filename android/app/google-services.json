@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705901396369",
+    "project_id": "carelaunch-a6250",
+    "storage_bucket": "carelaunch-a6250.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705901396369:android:ccd914bcfcf93b98529a30",
+        "android_client_info": {
+          "package_name": "com.example.carelaunch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD10d9F9Kke1VIuo_FCrNbFHwhdR7GxF0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
