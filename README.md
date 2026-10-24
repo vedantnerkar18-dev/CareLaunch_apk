@@ -9,7 +9,7 @@ A Flutter and Firebase app that helps parents and caregivers of children aged 5 
 | | |
 |---|---|
 | Live demo (web) | _add your link here_ |
-| Android APK | _add your Releases link here_ |
+| Android APK |https://github.com/vedantnerkar18-dev/CareLaunch_apk/releases/download/v1.0.0/app-release.apk|
 | Demo video | _add your video link here_ |
 
 **Demo account:** `demo@example.com` / `your-demo-password` (a sample child is already added)
