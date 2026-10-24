@@ -15,6 +15,16 @@ A Flutter and Firebase app that helps parents and caregivers of children aged 5 
 
 > Tip for the web demo: browsers only play sound after a tap, so tap a music track once in the Child Zone.
 
+## Screenshots
+
+| Check-in question | Result | Guidance | Nearby specialists |
+|---|---|---|---|
+| ![Check-in question](screenshot/question.png) | ![Result](screenshot/result.png) | ![Guidance](screenshot/guidance.png) | ![Nearby specialists](screenshot/hospital.png) |
+
+| Child history | Child Zone | Profile |
+|---|---|---|
+| ![Child history](screenshot/childhistory.png) | ![Child Zone](screenshot/childzone.png) | ![Profile](screenshot/userprofile.png) |
+
 ## What it does
 
 1. **Register with consent.** A caregiver creates an account, agrees to a plain-language consent note, and adds one or more children (first name or nickname, date of birth, optional gender and home language).
